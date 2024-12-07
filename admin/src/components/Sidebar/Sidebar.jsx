@@ -8,7 +8,7 @@ const Sidebar = () => {
     <div className='sidebar'>
         <div className="sidebar-options">
             <NavLink to='/' className="sidebar-option">
-                <img src={assets.parcel_icon} alt="" />
+                <img src={assets.parcel_icon} alt="" style={{height:'28px'}}/>
                 <p>Orders</p>
             </NavLink>
             <NavLink to='/add' className="sidebar-option">
