@@ -1,0 +1,9 @@
+.login-popup-container .content{
+    max-height: 30vh;
+    overflow-y: scroll;
+    padding: 15px;
+
+    & p,h3{
+        margin:20px 10px;
+    }
+}
