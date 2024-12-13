@@ -1,0 +1,40 @@
+.list-table-format {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 0.5fr;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    border: 1px solid #cacaca;
+    font-size: 13px;
+    text-align: center;
+}
+
+.list-table-format.title {
+    background-color: #f9f9f9;
+}
+
+.list-table-format img {
+    width: 50px;
+}
+
+.list-table-format b.cross-icon{
+    color: rgb(255, 28, 74);
+    cursor: pointer;
+    transition: 0.3s;
+    
+    &:hover{
+        transform: scale(1.1);
+        color: crimson;
+    }
+}
+
+@media (max-width:600px) {
+    .list-table-format {
+        grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+        gap: 15px;
+    }
+
+    .list-table-format.title {
+        display: none;
+    }
+}
