@@ -9,10 +9,6 @@ const Home = () => {
 
   const [category,setCategory]=useState('All');
 
-  React.useEffect(()=>{
-    localStorage.setItem("token","")
-  },[])
-
   return (
     <>
       <Header/>
