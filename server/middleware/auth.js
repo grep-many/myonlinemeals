@@ -17,9 +17,9 @@ const authMiddleware = async(req,res,next)=>{
         next();
     }catch(err){
         console.log(err);
-        res.json({
+        res.status(401).json({
             success:false,
-            message:'Something went wrong'
+            message:'Invalid Tokekn'
         })
     }
 }
